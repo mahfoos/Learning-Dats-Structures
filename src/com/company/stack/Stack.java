@@ -26,10 +26,20 @@ public class Stack {
     }
 
     public double pop(){
+        // Check whether stack is empty
         if (top == -1) {
             return -99;
         }else {
-            return stackArray[top--];
+            return stackArray[top--];  // access the item and decrement top
+        }
+    }
+
+    public double peek(){
+        // Check whether stack is empty
+        if (top == -1) {
+            return -99;
+        }else {
+            return stackArray[top];  // access the item \
         }
     }
 
